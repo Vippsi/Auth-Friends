@@ -80,7 +80,7 @@ export const Dashboard = () => {
 
             </form>
             <div className='friend'>
-                {friends.map(friend => (
+                {friends.slice(0).reverse().map(friend => (
                     <>
                     <h3>{friend.name}</h3>
                     <p>{friend.email}</p>
